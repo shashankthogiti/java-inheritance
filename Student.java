@@ -1,10 +1,14 @@
-package com.in28minutes.oops.level2.inheritence;
+package com.in28minutes.oops.level2.inheritence2;
 
 public class Student extends Person {
-// by extends command we get all the methods inPerson class to Student class also we can additionaly add methods in Student class
-// here Person is called the super class and Student is called Sub class
+
 	private String collegeName;
 	private int year;
+
+	public Student(String name, String collegeName) {
+		super(name);
+		this.collegeName = collegeName;
+	}
 
 	public String getCollegeName() {
 		return collegeName;
@@ -21,9 +25,6 @@ public class Student extends Person {
 	public void setYear(int year) {
 		this.year = year;
 	}
-
-
-
 
 
 }

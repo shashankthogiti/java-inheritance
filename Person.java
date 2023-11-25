@@ -1,18 +1,20 @@
-package com.in28minutes.oops.level2.inheritence;
+package com.in28minutes.oops.level2.inheritence2;
 
 public class Person extends Object {
-//by Default Person class extends Object class
 
 	private String name;
 	private String email;
 	private String phoneNumber;
 
-	public String getName() {
-		return name;
+	public Person(String name) {
+		System.out.println("Person Constructor");
+		this.name = name;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+
+
+	public String getName() {
+		return name;
 	}
 
 	public String getEmail() {
@@ -30,11 +32,5 @@ public class Person extends Object {
 	public void setPhoneNumber(String phoneNumber) {
 		this.phoneNumber = phoneNumber;
 	}
-
-	@Override
-	public String toString() {
-		return name + "#" + email + "#" + phoneNumber;
-	}
-
 
 }
